@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+text-align:center;
+background-color:#B2BABB ;
+}
+h1 {
+color:#D68910;
+}
+h3 {
+color:#2980B9;
+}
+</style>
+</head>
+<body>
+<h1>5.Program to find the Compound Interest?</h1>
+<center>
+<table>
+<tr>
+<td><h3>Enter the Principal</h3></td>
+<td>:</td>
+<td><input type="textbox" id="principal"></td>
+</tr>
+<tr>
+<td><h3>Enter the Rate</h3></td>
+<td>:</td>
+<td><input type="textbox" id="rate"></td>
+</tr>
+<tr>
+<td><h3>Enter the Time Period</h3></td>
+<td>:</td>
+<td><input type="textbox" id="time"></td>
+</tr>
+<tr>
+<th style="text-align: center">
+<button type="button" onClick="cal()">Calculate</button>
+</th>
+</tr>
+<tr>
+<td><h3>Compound Interest is</h3></td>
+<td>:</td>
+<td><input type="textbox" id="comp"></td>
+</tr>
+</table>
+</center>
+
+<script>
+function cal() {
+var p,r,t,amt,ci;
+p=parseInt(document.getElementById("principal").value);
+r=parseInt(document.getElementById("rate").value);
+t=parseInt(document.getElementById("time").value);
+amt=parseInt(p*(Math.pow((1+r/100),t)));
+ci=amt-p;
+document.getElementById("comp").value=ci;
+} 
+
+</script>
+</body>
+</html>

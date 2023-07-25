@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+text-align:center;
+background-color:#B2BABB ;
+}
+h1 {
+color:#D68910;
+}
+h3 {
+color:#2980B9;
+}
+</style>
+</head>
+<body>
+<h1>3.Program to find the sum and average of three numbers?</h1>
+<center>
+<table>
+<tr>
+<td><h3>Enter the first Number</h3></td>
+<td>:</td>
+<td><input type="textbox" id="first"></td>
+</tr>
+<tr>
+<td><h3>Enter the second Number</h3></td>
+<td>:</td>
+<td><input type="textbox" id="second"></td>
+</tr>
+<tr>
+<td><h3>Enter the third Number</h3></td>
+<td>:</td>
+<td><input type="textbox" id="third"></td>
+</tr>
+<tr>
+<th style="text-align: center">
+<button type="button" onClick="add()">Add</button>
+</th>
+<th style="text-align: center">
+<button type="button" onClick="avg()">Average</button>
+</th>
+</tr>
+<tr>
+<td><h3>Sum is</h3></td>
+<td>:</td>
+<td><input type="textbox" id="sum1"></td>
+</tr>
+<tr>
+<td><h3>Average is</h3></td>
+<td>:</td>
+<td><input type="textbox" id="average"></td>
+</tr>
+</table>
+</center>
+
+<script>
+function add() {
+var num1,num2,sum;
+num1=parseInt(document.getElementById("first").value);
+num2=parseInt(document.getElementById("second").value);
+num3=parseInt(document.getElementById("third").value);
+sum=num1+num2+num3;
+document.getElementById("sum1").value=sum;
+} 
+function avg() {
+var num1,num2,average,sum;
+num1=parseInt(document.getElementById("first").value);
+num2=parseInt(document.getElementById("second").value);
+num3=parseInt(document.getElementById("third").value);
+sum=num1+num2+num3;
+document.getElementById("sum1").value=sum;
+average=sum/3;
+document.getElementById("average").value=average;
+} 
+</script>
+</body>
+</html>
